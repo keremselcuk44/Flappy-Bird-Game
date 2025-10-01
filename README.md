@@ -1,120 +1,145 @@
-# Flappy Bird Game - C# Windows Forms
+Flappy Bird Oyunu - C# Windows Forms
+Proje Hakkında
+Bu proje, klasik Flappy Bird oyununun C# Windows Forms kullanılarak geliştirilmiş bir versiyonudur. Oyuncu, space tuşuna basarak kuşu kontrol eder ve borular arasından geçerek puan toplar.
 
-## Project Overview
+Özellikler
+🎮 Oyun Mekanikleri
+Kuş Kontrolü: Space tuşu ile kuşu zıplatma
 
-This project is a C# Windows Forms implementation of the classic Flappy Bird game. Players control a bird using the spacebar to navigate through pipes and score points.
+Yerçekimi Sistemi: Kuş sürekli aşağı doğru düşer
 
-## Features
+Borular: Rastgele yüksekliklerde borular arasından geçiş
 
-### 🎮 Game Mechanics
-- **Bird Control**: Make the bird flap using spacebar
-- **Gravity System**: Bird constantly falls downward
-- **Pipes**: Navigate through pipes with random heights
-- **Ground Movement**: Continuously moving ground effect
+Zemin Hareketi: Sürekli hareket eden zemin efekti
 
-### ⚡ Difficulty System
-- **Progressive Difficulty**: Speed and gravity increase with score
-- **Levels**:
-  - 0-5 score: Normal speed
-  - 6-10 score: Medium speed
-  - 11-20 score: High speed
-  - 20+ score: Very high speed
+⚡ Zorluk Sistemi
+Kademeli Zorluk: Skor arttıkça hız ve yerçekimi artar
 
-### 🏆 Scoring System
-- **Current Score**: Real-time game score
-- **High Score**: All-time best score
-- **Auto Save**: High score automatically saved
+Seviyeler:
 
-### 🎯 Game Over & Restart
-- **Collision Detection**: Pipe, ground, and screen boundary checks
-- **Game Over Panel**: Modern game over screen
-- **Quick Restart**: Instant restart with restart button
-- **Exit Option**: Quit game with exit button
+0-5 skor: Normal hız
 
-## Technical Specifications
+6-10 skor: Orta hız
 
-### 🛠️ Development Environment
-- **Platform**: Windows Forms
-- **Language**: C#
-- **Framework**: .NET Framework
+11-20 skor: Yüksek hız
 
-### 🎨 User Interface
-- **Responsive Design**: Centered game over panel
-- **Modern Buttons**: Hover-effect buttons
-- **Color Scheme**:
-  - Restart Button: Green tones
-  - Exit Button: Red tones
-  - Background: Semi-transparent black panel
+20+ skor: Çok yüksek hız
 
-### ⚙️ Controls
-- **Keyboard Input**: Spacebar control
-- **Mouse Input**: Button clicks
-- **Focus Management**: Keyboard focus handling
+🏆 Skor Sistemi
+Anlık Skor: Mevcut oyun skoru
 
-## Installation & Running
+En Yüksek Skor: Tüm zamanların en iyi skoru
 
-### Requirements
-- Visual Studio (2019 or later)
-- .NET Framework 4.5 or higher
+Otomatik Kayıt: En yüksek skor otomatik olarak kaydedilir
 
-### Running Steps
-1. Clone or download the project
-2. Open in Visual Studio
-3. Ensure required NuGet packages are installed
-4. Build and run the project
+🎯 Oyun Bitiş ve Yeniden Başlatma
+Çarpışma Tespiti: Borular, zemin ve ekran dışı kontrolü
 
-## Game Controls
+Oyun Bitti Paneli: Modern oyun bitti ekranı
 
-| Key | Action |
-|-----|--------|
-| `Space` | Flap bird |
-| `Restart Button` | Restart game |
-| `Exit Button` | Quit game |
+Yeniden Başlatma: Yeniden başlat butonu ile hızlı yeniden başlatma
 
-## Game Rules
+Çıkış Seçeneği: Çıkış butonu ile oyundan çıkış
 
-1. Progress as far as possible without hitting pipes or ground
-2. Gain 1 point for each pipe set passed
-3. Try to beat your high score
-4. Be careful as difficulty increases
+Teknik Özellikler
+🛠️ Geliştirme Ortamı
+Platform: Windows Forms
 
-## Developer Notes
+Dil: C#
 
-### Code Structure
-- **OOP Principles**: Class-based structure
-- **Event Handling**: Timer and keyboard events
-- **Collision Detection**: Bounds.IntersectsWith method
+Framework: .NET Framework
 
-### Extensibility
-- New pipe sets can be added
-- Different difficulty levels can be defined
-- Visual improvements can be made
+🎨 Kullanıcı Arayüzü
+Duyarlı Tasarım: Merkezi oyun bitti paneli
 
-## Class Structure
+Modern Butonlar: Üzerine gelince efektli butonlar
 
-### Main Form (play.cs)
-- **Properties**: Game variables (speed, gravity, score)
-- **Methods**: Game logic, collision detection, UI management
-- **Events**: Keyboard handlers, timer tick events
+Renk Şeması:
 
-### Game Components
-- **Pipes**: Multiple pipe sets for continuous gameplay
-- **Bird**: Player-controlled character
-- **Ground**: Moving background element
-- **UI Elements**: Score display, game over panel
+Yeniden Başlat Butonu: Yeşil tonları
 
-## License
+Çıkış Butonu: Kırmızı tonları
 
-This project is developed for educational purposes. The original Flappy Bird game belongs to .Gears company.
+Arkaplan: Yarı saydam siyah panel
 
-## Contributing
+⚙️ Kontroller
+Klavye Girdisi: Space tuşu ile kontrol
 
-1. Fork the project
-2. Create a feature branch (`git checkout -b feature/amazingFeature`)
-3. Commit your changes (`git commit -m 'Add some amazingFeature'`)
-4. Push to the branch (`git push origin feature/amazingFeature`)
-5. Open a Pull Request
+Fare Girdisi: Buton tıklamaları
 
----
+Odağı Yönetimi: Klavye odak yönetimi
 
-**Note**: This README reflects the current state of the project. Development and updates may continue.
+Kurulum ve Çalıştırma
+Gereksinimler
+Visual Studio (2019 veya üzeri)
+
+.NET Framework 4.5 veya üzeri
+
+Çalıştırma Adımları
+Projeyi klonlayın veya indirin
+
+Visual Studio'da açın
+
+Gerekli NuGet paketlerinin yüklü olduğundan emin olun
+
+Projeyi derleyin ve çalıştırın
+
+Oyun Kontrolleri
+Tuş	Aksiyon
+Space	Kuşu zıplat
+Yeniden Başlat Butonu	Oyunu yeniden başlat
+Çıkış Butonu	Oyundan çık
+Oyun Kuralları
+Borulara veya zemine çarpmadan mümkün olduğunca ilerle
+
+Her boru setinden geçişte 1 puan kazan
+
+Yüksek skoru geçmeye çalış
+
+Zorluk seviyesi arttıkça dikkatli ol
+
+Geliştirici Notları
+Kod Yapısı
+OOP Prensipleri: Sınıf tabanlı yapı
+
+Olay Yönetimi: Zamanlayıcı ve klavye olayları
+
+Çarpışma Tespiti: Bounds.IntersectsWith metodu
+
+Genişletilebilirlik
+Yeni boru setleri eklenebilir
+
+Farklı zorluk seviyeleri tanımlanabilir
+
+Görsel iyileştirmeler yapılabilir
+
+Sınıf Yapısı
+Ana Form (play.cs)
+Özellikler: Oyun değişkenleri (hız, yerçekimi, skor)
+
+Metodlar: Oyun mantığı, çarpışma tespiti, arayüz yönetimi
+
+Olaylar: Klavye işleyicileri, zamanlayıcı tik olayları
+
+Oyun Bileşenleri
+Borular: Sürekli oyun için çoklu boru setleri
+
+Kuş: Oyuncu kontrollü karakter
+
+Zemin: Hareketli arkaplan elemanı
+
+Arayüz Elemanları: Skor görüntüsü, oyun bitti paneli
+
+Lisans
+Bu proje eğitim amaçlı geliştirilmiştir. Özgün Flappy Bird oyunu .Gears şirketine aittir.
+
+Katkıda Bulunma
+Projeyi çatallayın
+
+Özellik dalı oluşturun (git checkout -b feature/harikaOzellik)
+
+Değişikliklerinizi kaydedin (git commit -m 'Harika bir özellik ekle')
+
+Dalı push edin (git push origin feature/harikaOzellik)
+
+Pull Request oluşturun
