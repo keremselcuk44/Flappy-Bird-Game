@@ -1,5 +1,5 @@
-Flappy Bird Oyunu - C# Windows Forms
-Proje Hakkında
+# Flappy Bird Oyunu - C# Windows Forms
+## Proje Hakkında
 Bu proje, klasik Flappy Bird oyununun C# Windows Forms kullanılarak geliştirilmiş bir versiyonudur. Oyuncu, space tuşuna basarak kuşu kontrol eder ve borular arasından geçerek puan toplar.
 
 Özellikler
