@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(play));
             this.timerGame = new System.Windows.Forms.Timer(this.components);
             this.ScoreText = new System.Windows.Forms.Label();
             this.pictureBoxArray1 = new Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray(this.components);
@@ -168,6 +169,7 @@
             this.Controls.Add(this.downPipe3);
             this.Controls.Add(this.downPipe2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "play";
             this.Text = "Flappy Bird";
